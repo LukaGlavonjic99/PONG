@@ -1,0 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SFXGoal : MonoBehaviour
+{
+    public AudioSource src;
+    public AudioClip sfx1;
+
+
+    public void Goal()
+    {
+        src.clip = sfx1;
+        src.Play();
+    }
+}
